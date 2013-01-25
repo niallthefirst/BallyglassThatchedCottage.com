@@ -5,10 +5,32 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="scripts/scripts.js"></script>
 	<link type="text/css"  rel="Stylesheet" href="styles/stylesheet.css" />
+
+    
+    <!-- These files are needed for SlimBox2 -->
+    <link   href="js/jquery.slimbox2/jquery.slimbox2.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery.slimbox2/jquery.slimbox2.js" type="text/javascript"></script>
+    
+    <!-- These files are the PWI files -->
+    <link   href="css/pwi.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery.pwi-min.js" type="text/javascript"></script>
+
+    <!-- Needed for the Google Maps overview map -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
     <script type="text/javascript">
         $(document).ready(function () {
              displayQuote();
 
+             var settings = {
+                 username: 'nfallon2002',
+                 albumMaxResults: 10,
+                 mode: 'album',
+                 album: "Ballyglass Thatched Cottage",
+//                 authKey: "<<Authorisation Key>>",
+                 thumbCss: { margin: '5px' }
+             };
+             $("#container").pwi(settings);
         }); 
     </script>
 </head>
@@ -43,20 +65,21 @@
     <div class="links">
         
         <div class="icons">
-        <ul>
-        <li> <a href="http://www.facebook.com/fallon.gathering"><img class="iconlink" src="images/facebooklogo.jpg" title="Facebook" alt="Facebook page" /></a> </li>
-        </ul>
+            <ul>
+            <li> <a href="http://www.facebook.com/fallon.gathering"><img class="iconlink" src="images/facebooklogo.jpg" title="Facebook" alt="Facebook page" /></a> </li>
+            </ul>
 
-        <blockquote>
-            <span class="bqstart">&#8220;</span>
-            <span class="blockquoteText"></span>
-            <span class="bqend">&#8221;</span>
-            <cite></cite>
-        </blockquote>
-    </div>
-
-
+            <blockquote>
+                <span class="bqstart">&#8220;</span>
+                <span class="blockquoteText"></span>
+                <span class="bqend">&#8221;</span>
+                <cite></cite>
+            </blockquote>
+        </div>
+      </div>
+   
     <div class="footer">
+        <div id="container"></div>
     Generated 5 paragraphs, 433 words, 2909 bytes of Lorem Ipsum
     </div>
 </body>
