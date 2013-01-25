@@ -63,26 +63,24 @@ ul
 
 blockquote 
 {
-    background-color: Aqua;
+    /*background-color: Aqua;*/
 	
     display:block;
 	
 	
-    -webkit-margin-before: 0.5em;
+    /*-webkit-margin-before: 0.5em;
     -webkit-margin-after: 0.5em;
     -webkit-margin-start: 20px;
-    -webkit-margin-end: 20px;
+    -webkit-margin-end: 20px;*/
     margin: 30px 30px 30px 30px;
 
     
 }
 
-q
-{
-    background-color: Green;
-    margin: 30px 30px 30px 30px;
-	
-    }
+.blockquoteText {
+   /*empty on purpose, this is required.	*/
+}
+
 .bqstart {
      float: left;
      font-size: 700%;
