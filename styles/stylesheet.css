@@ -1,22 +1,27 @@
 ﻿body 
 {
-    margin: 0; 	padding: 0;
-	font: normal 73%/1.6em 'Trebuchet MS', Tahoma, sans-serif;
+    margin: 5px; 	
+    padding: 5px;
+	font: normal 73%/1.6em; /*Trebuchet MS', Tahoma, sans-serif;*/
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
 	color: #555; 
-	
 	text-align: center;	
 }
 
 /* headers */
-h1, h2, h3 { font: bold 1em 'Trebuchet MS', Tahoma, Sans-serif; }
+h1, h2, h3 { font: bold 1em;/* 'Trebuchet MS', Tahoma, Sans-serif; */
+}
 h1  
 {
     font-size: 3em; 
     color: #65944A; 
     text-align: left;
     margin-left: 100px;
-	
-     }
+    -webkit-margin-before: 10px;
+	-webkit-margin-after: 10px;
+	-webkit-margin-start: 10px;
+	-webkit-margin-end: 10px;
+}
 h2 { font-size: 1.2em; text-transform: uppercase; }
 h3 { font-size: 1.2em; }
 
@@ -26,11 +31,8 @@ h3 { font-size: 1.2em; }
 	width: 500px;
 	height: 100px;
 	font-style:italic;
-	font-size: larger;
-	
+	font-size: 1.2em;
 	text-align: right;
-	
-	
 }
 
 .content
@@ -40,15 +42,43 @@ h3 { font-size: 1.2em; }
 	right: 100px;
 	width: 500px;
 	margin: 10px 10px 10px 10px;
+	padding: 20px 20px 20px 20px;
+	border-top:1px solid #eee; 
+	border-bottom:1px solid #eee;
+	background-color:transparent;
+	font-size:1em;
+	text-align:left;
 	
 }
 .links {
-	/*background-color:Maroon;*/
+	
 	float: left;
 	right: 0px;
 	width: 200px;
 	margin: 10px 10px 10px 10px;
+	border-top:1px solid #eee; 
+	border-bottom:1px solid #eee; 
+
 }
+.nav
+{
+    float: left;
+	right: 500px;
+	width: 220px;
+	margin: 10px 10px 10px 10px;
+	border-top:1px solid #eee; 
+	border-bottom:1px solid #eee; 
+}
+.footer {
+	background-color: Aqua;
+	position:absolute;
+	bottom: 10px;
+	width:500px;
+	height:50px;
+	margin-left:240px;
+	
+}
+
 
 .iconlink {
 	width: 50px;
@@ -63,51 +93,53 @@ ul
 
 blockquote 
 {
-    /*background-color: Aqua;*/
-	
     display:block;
-	
-	
-    /*-webkit-margin-before: 0.5em;
-    -webkit-margin-after: 0.5em;
-    -webkit-margin-start: 20px;
-    -webkit-margin-end: 20px;*/
     margin: 30px 30px 30px 30px;
-
-    
 }
 
 .blockquoteText {
    /*empty on purpose, this is required.	*/
+   font-size: 12;
+ 
 }
 
 .bqstart {
      float: left;
-     font-size: 700%;
+     font-size: 4em;
      color: #FF0000;
  }
 
  .bqend {
      float: right;
-     font-size: 700%;
+     font-size: 4em;
      color: #FF0000;
  }
 
-.nav
-{
-    /*background-color:Yellow;*/
-	float: left;
-	right: 500px;
-	width: 220px;
-	margin: 10px 10px 10px 10px;
-    }
 
-.footer {
-	/*background-color: Aqua;*/
-	position:absolute;
-	bottom: 50px;
-	width:800px;
-	height:50px;
-	margin-left:100px;
-	margin-right:100px;
+
+.nav ul  
+{
+	list-style:none; 
+	text-align:center; 
+	/*border-top:1px solid rgb(204, 201, 201); 
+	border-bottom:1px solid rgb(204, 201, 201); */
+	padding:10px 0; 
 }
+.nav ul li  
+{
+	display:inline; 
+	text-transform:uppercase; 
+	padding:0 10px; 
+	letter-spacing:10px; 
+}
+.nav ul li a  
+{
+	text-decoration:none; 
+	color:rgb(204, 201, 201); 
+}
+.nav ul li a:hover  
+{
+	text-decoration:underline; 
+}
+
+

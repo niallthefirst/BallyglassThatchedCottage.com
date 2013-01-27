@@ -9,19 +9,6 @@ function showQuote() {
     randnumber = parseInt(randnumber);
     var count_quotes = arrQuotes.length;
     var quoteindex = randnumber % count_quotes;
-//    var blockquotes = $("blockquote").get();
-//    var cites = $("cite").get();
-
-//    $.each(blockquotes, function (index, value) {
-//        value.childNodes[2].data = arrQuotes[quoteindex];
-//        cites[index].childNodes[0].data = " - " + arrCites[quoteindex];
-
-//        if (quoteindex < count_quotes - 1)
-//            quoteindex = quoteindex + 1;
-//        else
-//            quoteindex = 0;
-
-    //    });
     var blockquotesText = $(".blockquoteText").get();
         var cites = $("cite").get();
 
@@ -61,4 +48,25 @@ function loadTestimonials() {
             alert('woops!');
         }
     });
+}
+
+function displayWebAlbum() {
+    var settings = {
+        username: 'ballyglasscottage',
+        albumMaxResults: 6,
+        maxResults: 6,
+        mode: 'album',
+        album: "BallyglassCalendar2013",
+        authKey: "Gv1sRgCMOwmcjJlcWW7AE",
+        thumbCss: { margin: '5px' },
+        showAlbumDescription: false,
+        albumsPerPage: 1,
+        popupPlugin: "SlimBox",
+        slimbox_config: {
+            initialWidth: '500px',
+            initialHeight: '50px'
+        }
+    };
+    $("#container").pwi(settings);
+
 }

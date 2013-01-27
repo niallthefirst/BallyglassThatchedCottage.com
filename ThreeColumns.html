@@ -7,68 +7,24 @@
 	<link type="text/css"  rel="Stylesheet" href="styles/stylesheet.css" />
 
     
- <!-- These files are needed for FancyBox -->
-    <link   href="js/jquery.fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
-    <script src="js/jquery.fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-    <!-- These files are needed to display the FancyBox buttons at the top, including slideshow control -->
-    <link   href="js/jquery.fancybox/helpers/jquery.fancybox-buttons.css?v=2.0.5"  rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="js/jquery.fancybox/helpers/jquery.fancybox-buttons.js?v=2.0.5"></script>
-
+ 
     <!-- These files are needed for SlimBox -->
     <link   href="js/jquery.slimbox2/jquery.slimbox2.css" rel="stylesheet" type="text/css"/>
     <script src="js/jquery.slimbox2/jquery.slimbox2.js" type="text/javascript"></script>
-
-    <!-- These files are needed for ColorBox -->
-    <link   href="js/jquery.colorbox/colorbox.css" rel="stylesheet" type="text/css"/>
-    <script src="js/jquery.colorbox/jquery.colorbox-min.js" type="text/javascript"></script>
-
     <script src="js/jquery.blockUI.js" type="text/javascript"></script>
-
     <!-- These files are the PWI files -->
     <link   href="css/pwi.css" rel="stylesheet" type="text/css"/>
     <script src="js/jquery.pwi.js" type="text/javascript"></script>
-
     <!-- Needed for the Google Maps overview map -->
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
     
 
     <script type="text/javascript">
         $(document).ready(function () {
-             displayQuote();
+            displayQuote();
 
-//             var settings = {
-//                 username: 'nfallon2002',
-//                 albumMaxResults: 10,
-//                 mode: 'album',
-//                 album: "Ballyglass Thatched Cottage",
-//                 authKey: "Gv1sRgCPui6ZenqcfrvwE",
-//                 thumbCss: { margin: '5px' }
-//             };
-             //             $("#container").pwi(settings);
+            displayWebAlbum();
 
-             var settings = {
-                 username: 'ballyglasscottage',
-                 albumMaxResults: 10,
-                 maxResults:10,
-                 mode: 'album',
-                 album: "BallyglassCalendar2013",
-                 authKey: "Gv1sRgCMOwmcjJlcWW7AE",
-                 thumbCss: { margin: '5px' },
-                 showAlbumDescription: false,
-                 albumsPerPage:1,
-                 popupPlugin: "SlimBox",
-                 slimbox_config: {
-                     initialWidth:'500px',
-                     initialHeight:'100px'
-                 }
-             };
-             $("#container").pwi(settings);
-
-//             $(document).ready(function () {
-//                 $("#container").pwi({
-//                     username: 'nfallon2002'
-//                 });
-//             });
         }); 
     </script>
 </head>
@@ -83,14 +39,25 @@
     </div>
 	
     <div class="nav">
-    Vivamus aliquam posuere vestibulum. In tellus justo, porttitor ut rhoncus et, vestibulum eget tortor. Quisque vitae bibendum nulla. Vestibulum non tellus ante, nec sagittis nisl. Nam semper, urna nec laoreet tempus, tellus lorem sollicitudin massa, nec facilisis tellus ligula id enim. Nam sed ligula nec sapien ornare ultrices. Sed viverra metus sed massa fringilla venenatis convallis augue venenatis.
+    <ul>
+    <li><a href="ThreeColumns.html" title="Home">Home</a> </li>
+    <li><a href="ThreeColumns.html" title="Contact">Contact & Book</a> </li>
+    <li><a href="ThreeColumns.html" title="Gallery">Gallery</a> </li>
+    <li><a href="ThreeColumns.html" title="Links">Links</a> </li>
+    </ul>
     </div>
     
     <div class="content">
+        <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec neque purus, ac feugiat eros.
-    
-
-        Sed ligula velit, sollicitudin et vulputate sit amet, pharetra suscipit sapien. Aliquam ut nisi nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam vel lorem eget tortor laoreet rutrum vitae molestie justo. Aliquam felis nunc, semper eu ornare ut, consectetur non leo. Phasellus urna ante, dignissim ac dignissim eget, bibendum nec neque. Nunc convallis orci ac ligula vulputate lobortis. Ut viverra arcu eu libero tempus a interdum dui elementum. Nulla lacus turpis, commodo non pretium nec, rhoncus sit amet justo. Pellentesque elit odio, congue sit amet condimentum bibendum, congue ut sem. Pellentesque blandit, tellus quis tincidunt bibendum, est lacus commodo diam, varius iaculis mauris tortor at elit. Etiam ullamcorper, magna vel imperdiet imperdiet, arcu libero iaculis sapien, ut molestie turpis augue vitae sem. Proin molestie rutrum nunc ac egestas. Fusce sagittis ultricies sapien, ut rutrum nisl feugiat non. Fusce malesuada facilisis consectetur.
+        </p>
+        <p>
+        Sed ligula velit, sollicitudin et vulputate sit amet, pharetra suscipit sapien. Aliquam ut nisi nunc. 
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam vel lorem eget tortor laoreet rutrum vitae molestie justo. 
+        Aliquam felis nunc, semper eu ornare ut, consectetur non leo. 
+        Phasellus urna ante, dignissim ac dignissim eget, bibendum nec neque. 
+     
+        </p>
 
         <blockquote>
             <span class="bqstart">&#8220;</span>
