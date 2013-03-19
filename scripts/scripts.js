@@ -67,6 +67,6 @@ function displayWebAlbum() {
             initialHeight: '50px'
         }
     };
-    $("#container").pwi(settings);
+    $("#gallerydiv").pwi(settings);
 
 }
