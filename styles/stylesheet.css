@@ -29,25 +29,24 @@ h1
 h2 { font-size: 1.2em; text-transform: uppercase; }
 h3 { font-size: 1.2em; }
 
-#header {
-	
-	background-image: url("../images/ballyglassheader.png");
+#subheader {
 	width: 500px;
-	height: 100px;
+	
 	font-style:italic;
 	font-size: 1.2em;
 	text-align: right;
 }
-#secondheaderimage 
+#headerimage 
 {
-    width: 100px;
-    height: 100px;
+    background-image: url("../images/ballyglassheader500_200.png");
+	width: 500px;
+	height: 200px;
 }
 
 .gallery
 {
 	width:500px;
-	height:100px;
+	height:140px;
 	margin-left:20px;
 	margin-right:20px;
 }
@@ -121,7 +120,7 @@ ul
 blockquote 
 {
     display:block;
-    height:100px;
+    height:140px;
     width:100%;
     min-width:400px;
     padding:0px;
