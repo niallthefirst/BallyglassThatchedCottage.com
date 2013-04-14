@@ -44,21 +44,24 @@ h3 { font-size: 1.2em; }
     height: 100px;
 }
 
-#gallerydiv
+.gallery
 {
 	width:500px;
-	height:200px;
-	}
+	height:100px;
+	margin-left:20px;
+	margin-right:20px;
+}
 
 .content
 {
 	/*background-color:Gray;	*/
 	float: left;
 	right: 100px;
-	width: 500px;
+	width: 50%;
+	min-width:400px;
 	height: 70%;
 	
-	margin: 10px 10px 10px 10px;
+	margin: 10px;
 	padding: 20px 20px 20px 20px;
 	border-top:1px solid #eee; 
 	border-bottom:1px solid #eee;
@@ -67,12 +70,17 @@ h3 { font-size: 1.2em; }
 	text-align:left;
 	
 }
+
+p
+{
+	margin: 40px;	
+}
 .links {
 	
 	float: left;
 	right: 0px;
-	width: 200px;
-	margin: 10px 10px 10px 10px;
+	width: 100px;
+	margin: 10px;
 	border-top:1px solid #eee; 
 	border-bottom:1px solid #eee; 
 
@@ -81,8 +89,8 @@ h3 { font-size: 1.2em; }
 {
     float: left;
 	right: 500px;
-	width: 220px;
-	margin: 10px 10px 10px 10px;
+	width: 200px;
+	margin: 10px;
 	border-top:1px solid #eee; 
 	border-bottom:1px solid #eee; 
 }
@@ -113,8 +121,9 @@ ul
 blockquote 
 {
     display:block;
-    height:200px;
-    width:500px;
+    height:100px;
+    width:100%;
+    min-width:400px;
     padding:0px;
     margin:0px;
 }
