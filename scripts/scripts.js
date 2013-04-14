@@ -23,13 +23,31 @@ function showQuote() {
 
         });
 
-}
+    }
 
-function displayQuote() {
+function showQuoteInList() {
+
+    $.each(arrQuotes, function (index, value) {
+            $('#quotes').append( $('<li/>', {text: value }) );
+            
+
+            
+        });
+
+    }
+
+function displayChangingQuote() {
 
     loadTestimonials();
    
-    quoteIntervalId = setInterval("showQuote()", 1000);
+    quoteIntervalId = setInterval("showQuote()", 5000);
+}
+
+function displayQuoteInList() {
+
+    loadTestimonials();
+
+    
 }
 
 function loadTestimonials() {
@@ -41,8 +59,15 @@ function loadTestimonials() {
         success: function (data) {
             $.each(data, function (key, val) {
                 arrQuotes.push(val[3]);
-                arrCites.push(val[1] + ", " + val[2] + " (" + val[0] + ")");
+                
+                var text = val[1];
+                var name = val[2];
+                var date = val[0];
+                //arrCites.push(text + ", " + name + " (" + date + ")");
+                arrCites.push(text + ", " + name);
             });
+
+            showQuoteInList();
         },
         error: function (data) {
             alert('woops!');
