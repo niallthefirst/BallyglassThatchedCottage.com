@@ -6,7 +6,6 @@
 
 .pwi_container{
 	color: #000000;
-	background-color: #FFFFFF;
 	font-family: Arial;
 	font-size: 8pt;
 	padding: 5px;
@@ -34,7 +33,7 @@
 .pwi_album_description .details{
 	color: #000000;
 	font-size: 8pt;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 .pwi_album_description .description{
 	font-size: 10pt;

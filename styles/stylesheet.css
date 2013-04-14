@@ -2,23 +2,42 @@
 
 body 
 {
+    min-width:800px;
+    
     margin: 5px; 	
     padding: 5px;
-	font: normal 73%/1.6em; /*Trebuchet MS', Tahoma, sans-serif;*/
+	
+	/*
 	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
 	color: #555; 
-	text-align: center;	
-	min-width:800px;
+	text-align: center;	*/
+	
 
+	color: #333333;
+font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+
+	text-align: center;
+
+	background: url("../images/background.jpg") #070f1c no-repeat fixed center top;
 }
 
+#wrapper 
+{
+	position: relative;
+	z-index: 2;
+	width: 960px;
+	margin: 40px auto;
+	background-color:rgba(255,255,255,0.5);
+	
+}
+	
 /* headers */
 h1, h2, h3 { font: bold 1em;/* 'Trebuchet MS', Tahoma, Sans-serif; */
 }
 h1  
 {
     font-size: 3em; 
-    color: #65944A; 
+    color: rgba(21, 22, 21, 0.56);
     text-align: left;
     margin-left: 100px;
     -webkit-margin-before: 10px;
@@ -30,17 +49,16 @@ h2 { font-size: 1.2em; text-transform: uppercase; }
 h3 { font-size: 1.2em; }
 
 #subheader {
-	width: 500px;
 	
-	font-style:italic;
 	font-size: 1.2em;
-	text-align: right;
+	margin:10px;
 }
 #headerimage 
 {
-    background-image: url("../images/ballyglassheader500_200.png");
-	width: 500px;
-	height: 200px;
+    background-image: url("../images/ballyglassheader.png");
+	width: 200px;
+	height: 140px;
+	margin:10px;
 }
 
 .gallery
@@ -49,31 +67,45 @@ h3 { font-size: 1.2em; }
 	height:140px;
 	margin-left:20px;
 	margin-right:20px;
+	
 }
 
+
+p
+{
+	margin: 40px;	
+}
+
+.nav
+{
+    float: left;
+	width: 250px;
+	margin: 10px;
+	border-top:1px solid #eee; 
+	border-bottom:1px solid #eee; 
+	
+	background-color:rgba(255,255,255,0.5);
+}
 .content
 {
 	/*background-color:Gray;	*/
 	float: left;
 	right: 100px;
 	width: 50%;
-	min-width:400px;
+	min-width:500px;
 	height: 70%;
 	
 	margin: 10px;
 	padding: 20px 20px 20px 20px;
 	border-top:1px solid #eee; 
 	border-bottom:1px solid #eee;
-	background-color:transparent;
+	
 	font-size:1em;
 	text-align:left;
-	
+
+	background-color:rgba(255,255,255,0.5);	
 }
 
-p
-{
-	margin: 40px;	
-}
 .links {
 	
 	float: left;
@@ -83,19 +115,9 @@ p
 	border-top:1px solid #eee; 
 	border-bottom:1px solid #eee; 
 
-}
-.nav
-{
-    float: left;
-	right: 500px;
-	width: 200px;
-	margin: 10px;
-	border-top:1px solid #eee; 
-	border-bottom:1px solid #eee; 
+	background-color:rgba(255,255,255,0.5);
 }
 .footer {
-	background-color: Aqua;
-	
 	bottom: 10px;
 	width:500px;
 	height:25%;
@@ -103,6 +125,8 @@ p
 	float:right;
 	margin-right:450px;
 	padding:20px;
+	
+	background-color:rgba(255,255,255,0.5);
 }
 
 
@@ -165,7 +189,7 @@ blockquote
 .nav ul li a  
 {
 	text-decoration:none; 
-	color:rgb(204, 201, 201); 
+	color:rgb(16, 11, 71);
 }
 .nav ul li a:hover  
 {
