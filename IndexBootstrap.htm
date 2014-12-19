@@ -8,6 +8,8 @@
 
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+        <link href="styles/mybootstrapstylesheet.css" rel="stylesheet" type="text/css" />
     </head>
 
 
@@ -35,11 +37,32 @@
                 </article>
             </aside>
      
-            <section>
-                <h1>Images Carousel</h1>
-                <article>
-                <img src="images/DSCN0068.JPG" class="img-responsive  img-rounded" alt="Responsive image" />
-                </article>
+            <section id="imagecarousel">
+                <header>
+                    <h3>Gallery</h3>
+                </header>
+       
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+                <footer></footer>
             </section>
 
             <article role="main">
@@ -82,7 +105,7 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-
+        <script src="scripts/mycarousel.js" type="text/javascript"></script>
     </body>
 
     <nav role="navigation">
