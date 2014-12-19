@@ -17,6 +17,7 @@ function doCarousel(viewName)
 
     $.ajax({
         url: dir,
+        dataType: "html",//returns html by default. hence we have to parse it in the success callback.
         success: function (data) {
             $(data).find("a:contains(" + fileExtension + "),a:contains(" + fileExtension.toUpperCase() + ")").each(function () {
 
