@@ -1,4 +1,5 @@
-﻿[
+﻿function getTestimonials() {
+ var result = new Array( 
   ["09/11/2011", "Peter & Mary", "Penmaenmawr, North Wales", "Thank you for a wonderful stay in Ballyglass Cottage. You have resorted the building beautiful with so many of the original features. It's peace and tranquillity welcome you home after a busty day out. We ill definitely be back!"],
   ["21/10/2011", "Noel & Michelle", "Co.Tyrone", "We had and amaxing stay, the cottahe is stunnin and we will most certainly be back again!"],
   ["29/10/2011", "The Becketts & Bridie Egan,", " England", "We've had a great week here in Ballyglass Cottage. Thank you very much for providing us with a wonderfully cosy abode. Well done with the restoration, it's beautiful. Hope to be back again in the future."],
@@ -21,4 +22,7 @@
   ["23/9/2012", "Mary & Peter", "Penmaenmawr, North Wales", "Yet another wonderful stay. Such a great location for us to visit family in the Roscommon Balinasloe area. Can't believe the swallows are still here at the end of September!!"],
   ["26/10/2012", "Pauline, Mick and family", "Norfolk, England", "Lovely stay, made us very welcome. Lovely views. Will return soon."],
   ["2012", "Thomas & familiy", "unknown", "Had a nice time except for the weather. Your cottage is lovely and it was good to meet you. Would like to come again."]
-]
+  );
+
+ return result;
+}
