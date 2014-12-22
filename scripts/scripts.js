@@ -3,8 +3,7 @@ var quoteIntervalId = 0;
 var arrQuotes = [];
 var arrCites = [];
 
-function showQuote() {
-
+var showQuote = function() {
     var randnumber = Math.random() * 1000;
     randnumber = parseInt(randnumber);
     var count_quotes = arrQuotes.length;
@@ -25,32 +24,25 @@ function showQuote() {
 
     }
 
-function showQuoteInList() {
-
+var showQuoteInList = function () {
     $.each(arrQuotes, function (index, value) {
             $('#quotes').append( $('<li/>', {text: value }) );
-            
-
-            
         });
+}
 
-    }
 
-function displayChangingQuote() {
+var displayChangingQuote = function () {
 
     loadTestimonials();
    
     quoteIntervalId = setInterval("showQuote()", 5000);
 }
 
-function displayQuoteInList() {
-
+var displayQuoteInList = function () {
     loadTestimonials();
-
-    
 }
 
-function loadTestimonials() {
+var loadTestimonials = function () {
 
     $.ajax({
         dataType: "json",
@@ -75,7 +67,7 @@ function loadTestimonials() {
     });
 }
 
-function displayWebAlbum() {
+var displayWebAlbum = function () {
     var settings = {
         username: 'ballyglasscottage',
         albumMaxResults: 6,

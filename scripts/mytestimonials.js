@@ -1,29 +1,17 @@
-﻿
+﻿/*global _comma_separated_list_of_variables_*/
+
 /// <reference path="../resources/testimonials.js" />
 
-$(document).ready(function () {
-
-    displayChangingQuote();
 
 
-});
 
-var quoteIntervalId = 0;
 var testimonials;
 
-function displayChangingQuote() {
-    testimonials = getTestimonials();
-    showQuote();
-    quoteIntervalId = setInterval("showQuote()", 10000);
-}
 
-function showQuote() {
-    var randnumber = Math.random() * 1000;
-    randnumber = parseInt(randnumber);
-    var count_quotes = testimonials.length;
-    var quoteindex = randnumber % count_quotes;
+var showQuote = function () {
+    var quoteIndex = getQuoteIndex();
 
-    var value = testimonials[quoteindex];
+    var value = testimonials[quoteIndex];
 
     var blockquoteP = $("blockquote > p");
     var footerdate = $("blockquote > footer > span");
@@ -36,5 +24,26 @@ function showQuote() {
     blockquoteP.text(comment);
     footerdate.text(date);
     footercite.text(" - " + author);
-}
+};
 
+var getQuoteIndex = function () {
+    var randnumber = Math.random() * 1000;
+    randnumber = parseInt(randnumber);
+    var count_quotes = testimonials.length;
+    var result = randnumber % count_quotes;
+    return result;
+};
+
+var displayChangingQuote = function () {
+    testimonials = getTestimonials();
+    showQuote();
+    setInterval("showQuote()", 10000);
+};
+
+
+$(document).ready(function () {
+
+    displayChangingQuote();
+
+
+});
