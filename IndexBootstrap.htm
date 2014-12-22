@@ -19,15 +19,21 @@
 
     <body>
     
-        <nav role="navigation">
-            <a href="index.html" title="Home">Home</a>
-            <a href="contact.html" title="Contact">Contact</a>
-            <a href="contact.html" title="Booking">Booking</a>
-            <a href="gallery.html" title="Gallery">Gallery</a>
-            <a href="testimonials.html" title="Testimonials">Testimonials</a>
-            <a href="links.html" title="Links">Links</a>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">Ballyglass Thatched Cottage</a>
+                </div>
+                <div>
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="IndexBootstrap.htm">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+        
+                  </ul>
+                </div>
+            </div>
         </nav>
-
+        
         <header role="banner">
             <hgroup>
                 <h1>
@@ -42,7 +48,7 @@
 
         <main>
   
-            <aside role="complementary">
+            <aside role="complementary" class="container-fluid col-md-8" >
                 <article>
                     <blockquote>
                          <p></p>
@@ -51,18 +57,18 @@
                 </article>
             </aside>
 
-              <aside role="complementary">
+            <aside role="complementary" class="container-fluid col-md-4">
                 <section>
                    <!-- <h3>Like us on Facebook</h3>-->
                     <article>
                         <a href="http://www.facebook.com/fallon.gathering">
-                                <img src="images/facebooklogo.jpg" title="Facebook" alt="Facebook page" />
+                                <img src="images/facebooklogo.jpg" title="Facebook" alt="Like us on Facebook" />
                         </a>
                      </article>
                  </section>
             </aside>
      
-            <section id="imagecarousel" class="container">
+            <section id="imagecarousel" class="container-fluid">
                 <header>
                     <!--<h3>Gallery</h3>-->
                 </header>
@@ -90,51 +96,39 @@
                 <footer></footer>
             </section>
 
-            <article role="main" class="container">
+            <article role="main" class="container-fluid row">
                 <header>
                     <h3>This beautifully restored Irish thatch cottage is now available for your perfect country get away.</h3>
                 </header>
                 <section>
-                    <p>
+                    <p class="col-md-4">
                     Described as <strong>quirky</strong> it has some very unique characteristics as well as having all mod-cons you'd expect in a modern home.
                     </p>
-                    <p>
+                    <p class="col-md-4">
                     With the constant stress and complications of daily living we all need our regular contact with nature to switch off, completely unwind and reflect.  
                     </p>
-                    <p>
+                    <p class="col-md-4">
                     Ballyglass cottage is an authentic Irish thatch cottage, approximately 150yrs old, which has been beautifully restored. 
                     </p>
                 </section>
-                <footer>Whether its just a short weekend refresh or a peaceful extended stay amongst the beautiful natural surrounds you will come away inspired and revitalised - we guarantee it!</footer>
+                <footer class="col-md-10">Whether its just a short weekend refresh or a peaceful extended stay amongst the beautiful natural surrounds you will come away inspired and revitalised - we guarantee it!</footer>
             </article>
   
         </main>
 
 
-        <footer role="contentinfo">
+        <footer role="contentinfo" class="container-fluid navbar navbar-fixed-bottom">
             <address>
-                <strong>ballyglasscottage@gmail.com</strong><br>
+                <strong>ballyglasscottage@gmail.com</strong> 
                 <a href="mailto:#">ballyglasscottage@gmail.com</a>
-            </address>
-            <address>
                 <strong>
-                    Ballyglass Irish Thatched Cottage</strong><br>
-                    Ballyglass<br>
-                    Rahara<br>
-                    Co.Roscommon<br>
-                    Ireland<br>
+                    Ballyglass Irish Thatched Cottage</strong>
+                    Ballyglass, Rahara, Co.Roscommon, Ireland.
             </address>
         </footer>
 
 
-        <nav role="navigation">
-            <a href="index.html" title="Home">Home</a>
-            <a href="contact.html" title="Contact">Contact</a>
-            <a href="contact.html" title="Booking">Booking</a>
-            <a href="gallery.html" title="Gallery">Gallery</a>
-            <a href="testimonials.html" title="Testimonials">Testimonials</a>
-            <a href="links.html" title="Links">Links</a>
-        </nav>
+       
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

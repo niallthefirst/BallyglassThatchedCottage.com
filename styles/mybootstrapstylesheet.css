@@ -8,7 +8,10 @@
    
 }
 
-
+body {
+	font-family:Gill Sans MT;
+	padding-bottom: 70px;
+}
 main {
    position: relative;
 }
@@ -27,4 +30,18 @@ main:after {
 }
 
 
+article section 
+{
+	font-size:large;
+}
+
+article footer
+{
+	font-size:large;
+}
+
+
+
+	
+	
         
