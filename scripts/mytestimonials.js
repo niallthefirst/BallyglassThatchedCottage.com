@@ -23,7 +23,7 @@ var showQuote = function () {
 
     blockquoteP.text(comment);
     footerdate.text(date);
-    footercite.text(" - " + author);
+    footercite.text(author);
 };
 
 var getQuoteIndex = function () {
