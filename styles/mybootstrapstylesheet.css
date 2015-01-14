@@ -11,6 +11,21 @@
     max-height: 30%;
 }
 
+address
+{
+	font-size:medium;
+	color:White;
+	font-weight:bold;
+}
+address > #phone
+{
+	color:#97BF0D;
+	}
+.facebooklogo
+{
+	width:5%;
+	height:5%;
+	}
 
 .sitefooter {
   height: 60px;
@@ -19,20 +34,27 @@
   padding-top: 2%;
   padding-bottom:20px;
   font-size: larger;
+  
 }
 	
 header {
 	font-weight: 200;
-	padding: 2%;
+	
 }
 body {
 	color: #58595b;
-	background-color: #fff;
 	font-family: "Georgia";
 	font-size: 0.9rem;
 	line-height: 1.3;
-	padding: 2%;
+
 }
+
+.sleepssix	
+{
+	color:White;
+	font-size:xx-large;
+	}
+
 
 .mynavbar {
 	background-color: #003e52;
@@ -41,27 +63,20 @@ body {
 }
 
 
-main {
-   padding: 2%;
+
+.secondheader
+{
+	background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    margin-top:50px;
+    min-height:200px;
+    text-align:right;
+    margin-bottom: 2%;
 }
-main:after {
-    content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    background-image: url('../images/background.jpg');
-    width: 100%;
-    height: 100%;
-    opacity : 0.2;
-    z-index: -1;
-    background-color: rgb(216,216,216) ;
-    background-size: 100% 100%;
-    background-origin: content-box;
-   
-   
-}
+	
+
 
 /*quote before the comment*/
 blockquote:before {
