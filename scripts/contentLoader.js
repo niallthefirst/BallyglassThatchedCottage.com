@@ -1,7 +1,7 @@
 ﻿var loadContent = function (filename) {
 
     $("#main").load(filename + " #main > *",
-        function {
+        function() {
             doCarousel("main");
         }
     );

@@ -53,8 +53,8 @@ body {
 	font-size: 0.9rem;
 	line-height: 1.3;
 	background-color:White;
-	border: 50px solid #E2DDB5;
-	
+	border-left: 50px solid #E2DDB5;
+	border-right: 50px solid #E2DDB5;
 	
 }
 
