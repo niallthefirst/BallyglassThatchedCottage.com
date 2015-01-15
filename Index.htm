@@ -49,14 +49,13 @@
             </div>
             <div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="Index.htm">Home</a></li>
-                    <!--<li><a href="calendar.html">Calendar</a></li>-->
-                    <li><a href="Bookings.htm">Bookings</a></li>
+                    <li class="active"><button class="btn btn-link" role="link" onclick="loadContent('index.htm');">Home</button></li>
+                    <li><button class="btn btn-link" role="link" onclick="loadContent('bookings.htm');">Bookings</button></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div id="main" class="container-fluid">
         <div class="row-fluid">
             <div class="span2">
                 <!--sidebar-->
@@ -131,5 +130,6 @@
     <script src="scripts/mycarousel.js" type="text/javascript"></script>
     <script src="resources/testimonials.js" type="text/javascript"></script>
     <script src="scripts/mytestimonials.js" type="text/javascript"></script>
+    <script src="scripts/contentLoader.js" type="text/javascript"></script>
 </body>
 </html>

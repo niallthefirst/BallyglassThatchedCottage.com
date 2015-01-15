@@ -8,8 +8,8 @@ $(document).ready(function () {
     
 });
  
-function doCarousel(viewName)
-{
+function doCarousel(viewName) {
+
     var result = new Array();
 
     var dir = "images";
