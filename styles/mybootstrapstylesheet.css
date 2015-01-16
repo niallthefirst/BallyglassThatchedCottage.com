@@ -11,11 +11,31 @@ body {
 
 	border-left: 50px solid #ECECEA;
 	border-right: 50px solid #ECECEA;
-	
-	
+	background-color:#F5F1EC;
+	 
 }
 
+#main
+{
+	margin:10px;
+}
+#toparticletext
+{
+	margin:10px;
+	background-color:#E2DBD3;
+}
 
+#bookingsmaintext
+{
+	margin:10px;
+	background-color:#E2DBD3;
+	}
+
+.headerimage
+{
+	margin:10px;
+}
+	
 h1
 {
 	font-weight:bold;
@@ -36,6 +56,7 @@ h4
 .carousel 
 {
 	margin: 10px;
+	
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -72,42 +93,21 @@ header {
 	
 }
 
-
 .sleepssix	
 {
 	color:White;
 	font-size:xx-large;
-	}
-
+}
 
 .mynavbar {
 	background-color: #003e52;
 	opacity: 0.6;
 }
-
-.headerimage
-{
-	margin:10px;
-	}
-
-.midsection
-{
-	/*font-size: large;*/
-	}
-
-
-/*
-.secondheader
-{
-	background-image: url('../images/background.jpg');
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:center;
-    text-align:right; 
-}
-*/
 	
-
+blockquote
+{
+	background-color:#E2DBD3;
+	}
 
 /*quote before the comment*/
 blockquote:before {
@@ -134,7 +134,9 @@ article footer
 	font-size:large;
 }
 
-
-
 	
-        
+#bookingsmaintext
+{
+	margin:10px;
+	background-color:#E2DBD3;
+	}        
