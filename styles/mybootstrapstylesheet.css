@@ -1,14 +1,20 @@
 ﻿/* File Created: December 19, 2014 */
 body {
-	color: #58595b;
-	font-family: "Georgia";
-	font-size: 0.9rem;
-	line-height: 1.3;
-	background-color:White;
-	border-left: 50px solid #E2DDB5;
-	border-right: 50px solid #E2DDB5;
+	
+	font-family: 'Gotham SSm A', 'Gotham SSm B';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	color: #808080;
+	line-height: 30px;
+	
+
+	border-left: 50px solid #ECECEA;
+	border-right: 50px solid #ECECEA;
+	
 	
 }
+
 
 h1
 {
@@ -52,6 +58,8 @@ address > #phone
 .facebooklogo
 {
 	margin-top:1%;
+	max-height:80px;
+	max-width:80px;
 	}
 
 .sitefooter
