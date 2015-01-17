@@ -28,7 +28,8 @@ function doCarousel(viewName) {
                 var filename = spliturl[spliturl.length - 1];
                 //var fullPath = "http://" + host + "/" + websitename + "/" + dir + "/" + filename;
                 var fullPath = dir + "/" + filename;
-                result.push(fullPath);
+                if(fullPath !== undefined)
+                    result.push(fullPath);
             });
 
             drawCarousel(viewName, result);
@@ -55,7 +56,7 @@ function drawCarousel(viewName, arrayOfURIs)
         indicator.append("<li data-target='#myCarousel' data-slide-to='"+ index +"'></li>");
     }
 
-    var altText = "Ballyglass photo";
+    var altText = "Ballyglass Irish Thatched Cottage Photo";
     //add each image to the inner
     inner.append("<div class='item active'><img src='" + arrayOfURIs[0] + "' alt='"+ altText +"' ></div>");
     for(var index = 1;index<= arrayOfURIs.length;index++)
