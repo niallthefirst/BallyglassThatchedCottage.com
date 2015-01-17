@@ -12,34 +12,35 @@ body {
 
 	border-left: 50px solid #ECECEA;
 	border-right: 50px solid #ECECEA;
+	
 	background-color:#F5F1EC;
 	 
 }
 
 #main
 {
-	margin:10px;
+	margin:1%;
 }
 #toparticletext
 {
-	margin:10px;
+	margin:1%;
 	background-color:#E2DBD3;
 	text-align:center;
 }
 
 #weeklongsstays
 {
-	padding:10px;
+	padding:1%;
 	}
 #bookingsmaintext
 {
-	margin:10px;
+	margin:1%;
 	background-color:#E2DBD3;
 	}
 
 .headerimage
 {
-	margin:10px;
+	margin:1%;
 }
 	
 h1
@@ -62,14 +63,11 @@ h4
 
 .carousel 
 {
-	margin: 10px;
-	
+		
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-    width: 70%;
-    margin: auto;
-    max-height: 30%;
+    
 }
 
 
@@ -86,7 +84,6 @@ address > #phone
 .facebooklogo
 {
 	margin-top:1%;
-	max-height:80px;
 	max-width:80px;
 	}
 
@@ -94,7 +91,7 @@ address > #phone
 {
 	margin-top:1%;
 	font-size:small;
-	}	
+}	
 header {
 	font-weight: 200;
 	
@@ -115,7 +112,8 @@ header {
 
 #testimonials
 {
-	margin:10px;
+	
+	margin-top:2%;
 	}
 
 	
@@ -153,7 +151,7 @@ article footer
 	
 #bookingsmaintext, #calendarmaintext
 {
-	margin:10px;
-	padding:20px;
+	margin:1%;
+	padding:2%;
 	background-color:#E2DBD3;
 	}        
