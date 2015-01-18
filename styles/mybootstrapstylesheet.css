@@ -83,8 +83,9 @@ address > #phone
 }
 .facebooklogo
 {
-	margin-top:1%;
+	margin:0.5%;
 	max-width:80px;
+	padding:0px;
 	}
 
 .sitefooter
