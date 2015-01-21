@@ -3,9 +3,8 @@
 $(document).ready(function () {
 
     doCarousel("main");
-    
-   
-    
+
+
 });
  
 function doCarousel(viewName) {

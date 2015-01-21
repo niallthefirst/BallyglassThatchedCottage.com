@@ -37,7 +37,7 @@ var getQuoteIndex = function () {
 var displayChangingQuote = function () {
     testimonials = getTestimonials();
     showQuote();
-    setInterval("showQuote()", 10000);
+    setInterval(function() { showQuote(); }, 10000);
 };
 
 
