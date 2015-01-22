@@ -50,21 +50,19 @@ function drawCarousel(viewName, arrayOfURIs)
 
     //add a li for each image.
     indicator.append("<li data-target='#myCarousel' data-slide-to='0' class='active'></li>");
-    for(var index = 1;index<= arrayOfURIs.length;index++)
-    {
-        indicator.append("<li data-target='#myCarousel' data-slide-to='"+ index +"'></li>");
-    }
 
     var altText = "Ballyglass Irish Thatched Cottage Photo";
     //add each image to the inner
     inner.append("<div class='item active'><img src='" + arrayOfURIs[0] + "' class='img-responsive' alt='" + altText + "' ></div>");
-    for(var index = 1;index<= arrayOfURIs.length;index++)
+    
+
+    for(var index = 1;index < arrayOfURIs.length;index++)
     {
+        indicator.append("<li data-target='#myCarousel' data-slide-to='" + index + "'></li>");
+
+
         inner.append("<div class='item'><img src='" + arrayOfURIs[index] + "' class='img-responsive' alt='" + altText + "' ></div>");
+    
     }
 
-    //$.each(arrayOfURIs, function (index, value) {
-    //    console.log(value);
-    //});
-    
 }
