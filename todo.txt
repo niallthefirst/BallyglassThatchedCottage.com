@@ -1,0 +1,4 @@
+testimonials - input url. store in db, retrieve and show.
+lazy load images.
+fix responsiveness, border.
+background image.
