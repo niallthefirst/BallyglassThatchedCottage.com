@@ -1,4 +1,7 @@
-testimonials - input url. store in db, retrieve and show.
+testimonials - input url. store in db, retrieve and show. secure link. auto email request and notify.
+
 lazy load images.
 fix responsiveness, border.
 background image.
+
+rename images
