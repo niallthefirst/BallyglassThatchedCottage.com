@@ -1,68 +1,72 @@
-﻿/* File Created: December 19, 2014 */
+﻿/// <reference path="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"/>
 
-$(document).ready(function () {
+//$(document).ready(function () {
 
-    doCarousel("main");
+//    console.log("images ready");
 
+//    carouselModule.Draw();
+//});
 
-});
- 
-function doCarousel(viewName) {
+var carouselModule = (function () {
 
-    var result = new Array();
+    //privates
 
-    var dir = "images";
-    var fileExtension = ".jpg";
+    var drawImage = function (imageUrl) {
+        $("#image").attr("src", imageUrl);
+    }
+    function drawCarousel(arrayOfURIs) {
+        //var indicator = $("ol.carousel-indicators");
+        var inner = $("div.carousel-inner");
 
-    $.ajax({
-        url: dir,
-        dataType: "html",//returns html by default. hence we have to parse it in the success callback.
-        success: function (data) {
-            $(data).find("a:contains(" + fileExtension + "),a:contains(" + fileExtension.toUpperCase() + ")").each(function () {
+        //add a li for each image.
+        //indicator.append("<li data-target='#myCarousel' data-slide-to='0' class='active'></li>");
 
-                //sometimes need to insert the original directory name or the file will not be found!
-                var spliturl = this.href.split('/');
-                //var host = window.location.host;
-                //var websitename = spliturl[spliturl.length - 2];
-                var filename = spliturl[spliturl.length - 1];
-                //var fullPath = "http://" + host + "/" + websitename + "/" + dir + "/" + filename;
-                var fullPath = dir + "/" + filename;
-                if(fullPath !== undefined)
-                    result.push(fullPath);
-            });
+        var url = arrayOfURIs[0];
+        var altText = "Ballyglass Irish Thatched Cottage " + url.substr(("images/carousel").length + 1);
+        //add each image to the inner
+        inner.append("<div class='item active'><img src='" + url + "' class='img-responsive' alt='" + altText + "' ></div>");
 
-            drawCarousel(viewName, result);
-
-        },
-        error: function (xhr, status, errorThrown) {
-            console.log("Error: " + errorThrown);
-            console.log("Status: " + status);
-            console.dir(xhr);
-        }
-
-    });
-}
-
-function drawCarousel(viewName, arrayOfURIs)
-{
-    var indicator = $("ol.carousel-indicators");
-    var inner = $("div.carousel-inner");
-
-    //add a li for each image.
-    indicator.append("<li data-target='#myCarousel' data-slide-to='0' class='active'></li>");
-
-    var altText = "Ballyglass Irish Thatched Cottage Photo";
-    //add each image to the inner
-    inner.append("<div class='item active'><img src='" + arrayOfURIs[0] + "' class='img-responsive' alt='" + altText + "' ></div>");
-    
-
-    for(var index = 1;index < arrayOfURIs.length;index++)
-    {
-        indicator.append("<li data-target='#myCarousel' data-slide-to='" + index + "'></li>");
-
-
-        inner.append("<div class='item'><img src='" + arrayOfURIs[index] + "' class='img-responsive' alt='" + altText + "' ></div>");
-    
+        //Delay loading of individual images.
+        var index = 1;
+        var interval = setInterval(function () {
+            url = window.location.origin + "//" + arrayOfURIs[index];
+            drawImageInCarousel(inner, index, url);
+            if (index >= arrayOfURIs.length - 1) {
+                clearInterval(interval);
+            }
+            index++;
+        }, 2000);
+    }
+    function drawImageInCarousel(inner, index, url) {
+        var altText = "Ballyglass Irish Thatched Cottage " + url.substr(("Images").length + 1);
+        //indicator.append("<li data-target='#myCarousel' data-slide-to='" + index + "'></li>");
+        inner.append("<div class='item'><img src='" + url + "' class='img-responsive' alt='" + altText + "' ></div>");
     }
 
-}
+    function draw() {
+
+        console.log("Draw Carousel");
+
+        $.ajax({
+            dataType: "json",
+            url: 'api/Images',
+            type: 'GET'
+        })
+                .fail(function (jqXHR, textStatus, errorThrown) {
+                     errorModule.Write("fail " + errorThrown);
+                })
+                .done(function (data, textStatus, jqXHR) {
+                    drawCarousel(data);
+                }
+            );
+    }
+
+    return {
+        //publics
+        Draw: draw
+    };
+
+})();
+
+
+
