@@ -174,7 +174,7 @@ img {
 .templatemo_about_box {
 	background: #ffffff;
 	border-radius: 5px;
-	padding: 20px 0px;
+	padding: 20px;
 	text-align: center;
 }
 
@@ -711,7 +711,7 @@ and (max-width : 480px) {
 }
 @media(min-width:600px) and (max-width:769px){
 	h1	{ font-size: 1em;}
-	.templatemo_slidetitle { font-size: 0.8em;}
+	.templatemo_slidetitle { font-size: 15px;}
 	.templatemo_caption	{ font-size: 12px; top: 170px;  width: 90%; margin-left: 5%; }
 	.rmargin	{ right: 3%; }
 	.btn	{ font-size: 12px; padding: 3px 5px;}
