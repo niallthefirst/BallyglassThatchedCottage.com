@@ -169,6 +169,12 @@ img {
 
 }
 
+.templatemo_white {
+	background-color: white;
+	padding: 70px 0px;
+
+}
+
 .templatemo_paracenter { text-align: center; }
 
 .templatemo_about_box {
