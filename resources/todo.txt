@@ -1,5 +1,6 @@
 Admin:
 Merge FB accounts, use seperate account, invite existing followers to the new FB.
+Blog the reviews.
 Blog cattle.
 Blog 2022 plan.
 
