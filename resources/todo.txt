@@ -1,0 +1,13 @@
+Admin:
+Merge FB accounts, use seperate account, invite existing followers to the new FB.
+Blog cattle.
+Blog 2022 plan.
+
+Website:
+Testimonials to Reviews.
+Make Reviews smaller.
+CSS before.
+Photos with simple description, remove the overlap.
+Move logo under menu.
+Simplify html.
+Rewrite with pure Bootstrap.
