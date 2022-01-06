@@ -781,3 +781,7 @@ and (max-device-width : 1024px) {
 	#slider-direction-nav,
 	#slider-control-nav { opacity: 1; }
 }
+
+.mediaicons {
+	max-width:4% !important;
+}
